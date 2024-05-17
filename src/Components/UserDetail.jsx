@@ -36,7 +36,7 @@ const UserDetail = () => {
 
     const validateForm = () => {
         const { name, email, number } = formData;
-        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        const emailRegex = "/^[^\s@]+@[^\s@]+\.[^\s@]+$/";
         const phoneRegex = /^\d{10}$/;
 
         const results = {
