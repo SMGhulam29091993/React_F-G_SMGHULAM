@@ -41,7 +41,7 @@ Each question has four options: Excellent, Good, Fair, Bad.
 ### Submission
 
 - On submission, users receive a message "Thank you for completing the information".
-- Data is stored locally on the device in browser storage.
+- Data is stored locally on the device in browser storage/local storage.
 
 ## Submission List
 
