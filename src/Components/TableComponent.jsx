@@ -6,6 +6,7 @@ import Modal from "./Modal";
 
 const TableComponent = () => {
     const [userData, setUserData] = useState([]);
+    const [totalData, setTotalData] = useState([])
     const [selectedRows, setSelectedRows] = useState([]);
     const [searchValue, setSearchValue] = useState("");
     const [modalData, setModalData] = useState(null);
@@ -18,6 +19,7 @@ const TableComponent = () => {
         const storedData = JSON.parse(localStorage.getItem('formSubmissions'));
         if (storedData) {
             setUserData(storedData);
+            setTotalData(storedData)
         }
     }, []);
 
@@ -69,7 +71,7 @@ const TableComponent = () => {
                 <div className="flex items-center justify-between m-1">
                     <div className="flex flex-col">
                         <h2 className="font-semibold text-slate-500">Aromatic Bar</h2>
-                        <p className="text-slate-400 text-md font-semibold">{userData.length} records</p>
+                        <p className="text-slate-400 text-md font-semibold">{userData.length} out of {totalData.length} records</p>
                     </div>
                     <div className="flex items-center gap-2" >
                         <div className="min-w-24 border-2 border-slate-500 p-1 rounded flex items-center justify-between">
