@@ -67,7 +67,8 @@ const TableComponent = () => {
                     whileInView={{x:0,opacity:1}}transition={{duration:1.5,ease:"backInOut"}}>
 
                 <div className="flex items-center justify-between m-1">
-                    <div className="">
+                    <div className="flex flex-col">
+                        <h2 className="font-semibold text-slate-500">Aromatic Bar</h2>
                         <p className="text-slate-400 text-md font-semibold">{userData.length} records</p>
                     </div>
                     <div className="flex items-center gap-2" >

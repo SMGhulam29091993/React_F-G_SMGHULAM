@@ -115,7 +115,8 @@ const UserDetail = () => {
         <div>
             <motion.div className='mx-auto my-5 max-w-5xl border-2 rounded-lg p-3' initial={{opacity:0}} whileInView={{opacity:1}}
                 transition={{duration:1,ease:"easeInOut"}}>
-                <form className='flex flex-col gap-4' onSubmit={handleSubmit}>
+                <h2 className='font-semibold text-slate-500 border-2 rounded p-2 mb-2'>Aromtic Bar</h2>
+                <form className='flex flex-col gap-4 border-2 rounded p-2' onSubmit={handleSubmit}>
                     <div className='flex md:flex-row flex-col gap-3 '>
                         <div className='flex flex-col gap-3 md:w-[50%]'>
                             <div className='flex flex-col gap-1'>
