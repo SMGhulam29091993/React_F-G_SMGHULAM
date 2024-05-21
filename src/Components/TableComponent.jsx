@@ -68,7 +68,7 @@ const TableComponent = () => {
             <motion.div className='mx-auto my-5 max-w-5xl border-2 rounded-lg p-3 ' initial={{x:-200, opacity:0}} 
                     whileInView={{x:0,opacity:1}}transition={{duration:1.5,ease:"backInOut"}}>
 
-                <div className="flex items-center justify-between m-1">
+                <div className="flex items-center justify-between flex-wrap m-1">
                     <div className="flex flex-col">
                         <h2 className="font-semibold text-slate-500">Aromatic Bar</h2>
                         <p className="text-slate-400 text-md font-semibold">{userData.length} out of {totalData.length} records</p>

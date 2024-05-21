@@ -120,11 +120,9 @@ const UserDetail = () => {
                     <div className='flex md:flex-row flex-col gap-3 '>
                         <div className='flex flex-col gap-3 md:w-[50%]'>
                             <div className='flex flex-col gap-1'>
-                                
-                                    <label className='whitespace-nowrap font-semibold flex md:flex-row flex-col items-center gap-2'>
-                                            Customer Name <span ><FaAsterisk className='text-red-700 text-xs'/></span>
-                                    </label>
-                                
+                                <label className='whitespace-wrap font-semibold flex items-center gap-2'>
+                                        Customer Name <span ><FaAsterisk className='text-red-700 text-xs'/></span>
+                                </label>
                                 <input type='text' id='name' value={formData.name} onChange={handleChange} placeholder='Name'
                                     className={`w-full p-2 border ${errors.name ? 'border-red-500' : 'border-gray-300'} rounded`} />
                                 {errors.name && <p className="text-red-500 text-sm mt-1">{errors.name}</p>}
@@ -156,13 +154,13 @@ const UserDetail = () => {
                     </div>
 
                     <div className='flex md:flex-row flex-col gap-3'>
-                        <div className='flex flex-col gap-3 lg:w-[50%] xs:w-[30%]' >
+                        <div className='flex flex-col gap-3' style={{ width: "50%" }}>
                             <div className='flex flex-col gap-1'>
-                                <label className='whitespace-wrap font-semibold flex items-center gap-2 w-full'>
+                                <label className='whitespace-wrap font-semibold flex items-center gap-2'>
                                     Please rate the quality of the service received from the host
                                     <span ><FaAsterisk className='text-red-700 text-xs'/></span>
                                 </label>
-                                                            
+                                
                                 <div className='flex gap-3'>
                                     <div className='flex gap-2'>
                                         <input type='checkbox' id='host-excellent' className='w-5' checked={formData.host.includes("excellent")}
@@ -219,7 +217,7 @@ const UserDetail = () => {
                         
 
                         <div className='flex flex-col gap-3'>
-                            <div className='flex flex-col gap-1 lg:w-[50%] xs:w-[30%]' >
+                            <div className='flex flex-col gap-1' style={{ width: "50%" }}>
                                 <label className='whitespace-nowrap font-semibold flex items-center gap-2'>
                                     Please rate the quality of the beverages. 
                                     <span ><FaAsterisk className='text-red-700 text-xs'/></span>
