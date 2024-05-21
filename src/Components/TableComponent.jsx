@@ -73,18 +73,18 @@ const TableComponent = () => {
                         <h2 className="font-semibold text-slate-500">Aromatic Bar</h2>
                         <p className="text-slate-400 text-md font-semibold">{userData.length} out of {totalData.length} records</p>
                     </div>
-                    <div className="flex items-center gap-2" >
-                        <div className="min-w-24 border-2 border-slate-500 p-1 rounded flex items-center justify-between">
+                    <div className="flex items-center gap-2 max-w-lg" >
+                        <div className="border-2 border-slate-500 p-1 rounded flex items-center justify-between">
                             <input placeholder="Search" value={searchValue} 
                                 onChange={(e)=>setSearchValue(e.target.value)} 
-                                className="border-none outline-none bg-white" />
+                                className="border-none outline-none bg-white  lg:w-[30%] xs:w-[10%]" />
                             <FaSearch onClick={()=>handleSearch(searchValue)} className="cursor-pointer"/>
                         </div>
                         
                         <div onClick={handleReset} className="bg-slate-100 p-3 rounded text-slate-500 cursor-pointer ">
                             <FaSyncAlt   />
                         </div>
-                        <button onClick={()=>startTransition(()=>navigate("/"))} className="p-2 bg-green-600 text-white rounded-lg min-w-24">
+                        <button onClick={()=>startTransition(()=>navigate("/"))} className="p-2 bg-green-600 text-white rounded-lg w-24">
                             Add New
                         </button>
                     </div>
