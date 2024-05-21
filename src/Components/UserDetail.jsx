@@ -156,7 +156,7 @@ const UserDetail = () => {
                     <div className='flex md:flex-row flex-col gap-3'>
                         <div className='flex flex-col gap-3' style={{ width: "50%" }}>
                             <div className='flex flex-col gap-1'>
-                                <label className='whitespace-wrap font-semibold flex items-center gap-2'>
+                                <label className='whitespace-wrap font-semibold flex flex-wrap items-center gap-2'>
                                     Please rate the quality of the service received from the host
                                     <span ><FaAsterisk className='text-red-700 text-xs'/></span>
                                 </label>
@@ -186,7 +186,7 @@ const UserDetail = () => {
                             </div>
                             {errors.host && <p className="text-red-500 text-sm mt-1">{errors.host}</p>}
                             <div className='flex flex-col gap-1' style={{ width: "50%" }}>
-                                <label className='whitespace-nowrap font-semibold flex items-center gap-2'>
+                                <label className='whitespace-nowrap font-semibold flex flex-wrap items-center gap-2'>
                                     Was our restaurant clean? <span ><FaAsterisk className='text-red-700 text-xs'/></span>
                                 </label>
                                 <div className='flex gap-3'>
@@ -218,7 +218,7 @@ const UserDetail = () => {
 
                         <div className='flex flex-col gap-3'>
                             <div className='flex flex-col gap-1' style={{ width: "50%" }}>
-                                <label className='whitespace-nowrap font-semibold flex items-center gap-2'>
+                                <label className='whitespace-nowrap font-semibold flex flex-wrap items-center gap-2'>
                                     Please rate the quality of the beverages. 
                                     <span ><FaAsterisk className='text-red-700 text-xs'/></span>
                                 </label>
@@ -248,7 +248,7 @@ const UserDetail = () => {
                             {errors.beverages && <p className="text-red-500 text-sm mt-1">{errors.beverages}</p>}
 
                             <div className='flex flex-col gap-1' style={{ width: "50%" }}>
-                                <label className='whitespace-nowrap font-semibold flex items-center gap-2'>
+                                <label className='whitespace-nowrap font-semibold flex flex-wrap items-center gap-2'>
                                     Please rate your overall dining experience. 
                                     <span ><FaAsterisk className='text-red-700 text-xs'/></span>
                                 </label>
