@@ -73,7 +73,7 @@ const TableComponent = () => {
                         <h2 className="font-semibold text-slate-500">Aromatic Bar</h2>
                         <p className="text-slate-400 text-md font-semibold">{userData.length} out of {totalData.length} records</p>
                     </div>
-                    <div className="flex items-center gap-2 max-w-lg" >
+                    <div className="flex flex-wrap items-center gap-2 max-w-lg" >
                         <div className="border-2 border-slate-500 p-1 rounded flex items-center justify-between">
                             <input placeholder="Search" value={searchValue} 
                                 onChange={(e)=>setSearchValue(e.target.value)} 
